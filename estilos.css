@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff0f5;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #d63384;
+}
+
+.contenedor-malla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.ramo {
+  border: 2px solid #d63384;
+  border-radius: 10px;
+  padding: 10px;
+  width: 220px;
+  background-color: #ffe6f0;
+  transition: 0.3s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ramo:hover {
+  background-color: #ffd1e3;
+}
+
+.ramo.aprobado {
+  background-color: #d1ffd6;
+  border-color: #28a745;
+  text-decoration: line-through;
+}
+
+.ramo.bloqueado {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+  color: #999;
+  cursor: not-allowed;
+}
